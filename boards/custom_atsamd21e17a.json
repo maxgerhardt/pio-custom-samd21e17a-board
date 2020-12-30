@@ -1,0 +1,55 @@
+{
+    "build": {
+      "arduino": {
+          "ldscript": "flash_without_bootloader.ld"
+      },
+      "core": "adafruit",
+      "cpu": "cortex-m0plus",
+      "extra_flags": "-DARDUINO_TRINKET_M0 -DCRYSTALLESS -DADAFRUIT_TRINKET_M0 -DARM_MATH_CM0PLUS -D__SAMD21E17A__",
+      "f_cpu": "48000000L",
+      "hwids": [
+        [
+          "0x239A",
+          "0x801E"
+        ],
+        [
+          "0x239A",
+          "0x001E"
+        ]
+      ],
+      "mcu": "samd21e17a",
+      "system": "samd",
+      "usb_product": "Custom ATSAMD21E17A Board",
+      "variant": "custom_atsamd21e17a"
+    },
+    "debug": {
+      "jlink_device": "ATSAMD21E17",
+      "openocd_chipname": "at91samd21e17",
+      "openocd_target": "at91samdXX",
+      "svd_path": "ATSAMD21E17A.svd"
+    },
+    "frameworks": [
+      "arduino"
+    ],
+    "name": "Custom ATSAMD21E17A Board",
+    "upload": {
+      "disable_flushing": true,
+      "maximum_ram_size": 16384,
+      "maximum_size": 131072,
+      "native_usb": true,
+      "offset_address": "0x0000",
+      "protocol": "atmel-ice",
+      "protocols": [
+        "sam-ba",
+        "blackmagic",
+        "jlink",
+        "atmel-ice"
+      ],
+      "require_upload_port": true,
+      "use_1200bps_touch": true,
+      "wait_for_upload_port": true
+    },
+    "url": "https://www.unknown.com/",
+    "vendor": "Custom"
+  }
+  
