@@ -19,3 +19,9 @@ The board is assumed to have no crystall oscillator on board and therefore uses 
 It is assumed that no bootloader is used (like SAM-BA), therefore the board's JSON file specifies `flash_without_bootloader.ld` and an application flash offset of 0.
 
 **Note:** This [community topic](https://community.platformio.org/t/how-to-access-pins-on-samd21-e18a-with-arduino-framework-on-custom-board/18130/2?u=maxgerhardt) shows an example implementation for accessing all pins on an SAMD21E18 chip and may come in handy when adapting it for this chip.
+
+## VSCode says Arduino.h is missing / can't be resolved!
+
+Build the project once. PlatformIO only downloads packages (like the Adafruit Arduino core) on demand. 
+
+If it still can't be found but the build goes through, rebuild your IntelliSense via Ctrl+Shift+P -> Rebuild IntelliSense.
